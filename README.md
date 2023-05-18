@@ -8,11 +8,6 @@ Ce projet est une implémentation d'un système de communication basé sur le pr
 - Client Subscriber : Permet de recevoir des messages depuis un topic MQTT spécifié.
 - Serveur MQTT : Gère les connexions des clients MQTT et distribue les messages aux clients subscribers.
 
-## Configuration requise
-
-- Python 3.x
-- Les modules Python requis sont spécifiés dans le fichier `requirements.txt`.
-
 ## Utilisation
 
 1. Lancez le serveur MQTT.
