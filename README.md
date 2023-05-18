@@ -13,32 +13,22 @@ Ce projet est une implémentation d'un système de communication basé sur le pr
 - Python 3.x
 - Les modules Python requis sont spécifiés dans le fichier `requirements.txt`.
 
-## Installation
-
-1. Clonez ce dépôt de projet sur votre machine locale.
-2. Accédez au répertoire du projet.
-
-   ```bash
-   cd projet-mqtt/
-   ```
-3. Installez les dépendances Python requises.
-
 ## Utilisation
 
 1. Lancez le serveur MQTT.
    ```bash
-   python mqtt_server.py -p 1883
+   python mqtt-server.py -p 1883
    ```
 2. Exécutez le client MQTT en tant que publisher ou subscriber en utilisant les commandes appropriées.
 
     - Client Publisher :
 
     ```bash
-    python mqtt_client.py pub -H localhost -p 1883 -t topic_name -i publisher_id
+    python mqtt-client.py pub -H localhost -p 1883 -t topic_name -i publisher_id
     ```
     - Client Subscriber :
     ```bash
-    python mqtt_client.py sub -H localhost -p 1883 -t topic_name -i subscriber_id
+    python mqtt-client.py sub -H localhost -p 1883 -t topic_name -i subscriber_id
     ```
 Assurez-vous de remplacer les valeurs des arguments (localhost, 1883, topic_name, etc.) par les valeurs appropriées selon votre configuration.
 
